@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+
+  <!-- HOSTED -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800"
+    rel="stylesheet" type="text/css" />
+  <link href="fonts/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" />
+
+  <!-- LOCAL -->
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
+
+  <!-- HOSTED -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+
+  <!-- LOCAL -->
+  <script src="scripts/pt.min.js"></script>
+  <script src="scripts/index.js"></script>
+  <script src="scripts/modal.js"></script>
+</head>
+
+<body>
+  <div class="overflow-wrap">
+    <!-- HOME -->
+    <div class="modal-wrap flex">
+      <div class="mask"></div>
+      <div class="modal" id="modal">
+        <div class="carousel-wrap">
+          <div class="window">
+            <div id="carousel">
+              <div class="slide"></div>
+              <div class="slide"></div>
+              <div class="slide"></div>
+            </div>
+            <i class="mdi mdi-chevron-left" id="prev"></i>
+            <i class="mdi mdi-chevron-right" id="next"></i>
+          </div>
+        </div>
+        <div class="info-box">
+          <div class="title"></div>
+          <div class="tag"></div>
+          <div class="detail"></div>
+          <a href="#" target="_blank">
+            <div class="button">
+              <i class="mdi mdi-open-in-new"></i>VIEW SITE
+            </div>
+          </a>
+        </div>
+        <i class="close mdi mdi-close"></i>
+      </div>
+    </div>
+
+    <section id="home" class="flex height-fix">
+      <div id="pt" class="canvas"></div>
+      <div class="flex">
+
+        <div class="text">
+          <img src="img/me.png" class="me" /><br>
+          <div class="highlightReg">
+            <span>
+              Hello, I'm <b><u>Jason Kramer.</u></b>
+              <br />
+              I'm a software engineer.</span></div>
+        </div>
+
+
+
+        <div class="button page-link" dest="about">
+          View my work <i class="mdi mdi-arrow-right"></i>
+        </div>
+
+        <nav class="flex">
+          <div class="link-wrap">
+            <div class="active page-link" dest="home">home</div>
+            <div class="page-link" dest="about">about</div>
+            <div class="page-link" dest="portfolio">portfolio</div>
+            <div class="page-link" dest="blog">my journey</div>
+            <div class="page-link" dest="contact">contact</div>
+          </div>
+          <i class="mdi mdi-menu"></i>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container flex">
+        <div class="header waypoint" data-animation="slide-in-left">
+          ABOUT
+        </div>
+        <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s"></div>
+
+        <div class="flex row label-wrap">
+          <div class="flex row-gt-sm">
+            <div class="flex bullet-wrap ">
+              <div class="hex-wrap waypoint" data-animation="flip-in-x">
+                <div class="hexagon">
+                  <i class="mdi mdi-speedometer"></i>
+                </div>
+              </div>
+              <div class="waypoint" data-animation="fade-in">
+                <div class="label bold">Driven</div>
+                <div>
+                  I go above and beyond what the task calls for and get it completed in a timely manner.
+                </div>
+              </div>
+            </div>
+
+            <div class="flex bullet-wrap ">
+              <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".2s">
+                <div class="hexagon">
+                  <i class="mdi mdi-cellphone-link"></i>
+                </div>
+              </div>
+              <div class="waypoint" data-animation="fade-in" data-delay=".2s">
+                <div class="label bold">Leader</div>
+                <div>I enjoy working together with others and motivating my teammates to work towards a common goal.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex row-gt-sm">
+            <div class="flex bullet-wrap ">
+              <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".4s">
+                <div class="hexagon">
+                  <i class="mdi mdi-lightbulb-outline"></i>
+                </div>
+              </div>
+              <div class="waypoint" data-animation="fade-in" data-delay=".4s">
+                <div class="label bold">Creative</div>
+                <div>I am always coming up with new and unique solutions to problems.</div>
+              </div>
+            </div>
+
+            <div class="flex bullet-wrap ">
+              <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".6s">
+                <div class="hexagon">
+                  <i class="mdi mdi-rocket"></i>
+                </div>
+              </div>
+              <div class="waypoint" data-animation="fade-in" data-delay=".6s">
+                <div class="label bold">Innovative</div>
+                <div>
+                  I stay on top of new trends and create new methods of confronting challenges.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-wrapper flex row-gt-sm">
+          <div class="flex flex-50-gt-sm waypoint" data-animation="slide-in-left">
+            <img src="img/me.png" class="me" />
+            <!-- <div><img class="up-arrow" src="img/up-arrow.png"></div> -->
+            <div class="label bold">Jason Kramer</div>
+            <div>
+              I'm a senior at San Diego State University majoring in Computer Science and minoring in Marketing.
+              I recently graduated from the Lavin Entrepreneurship Program and have worked on several startups within
+              the
+              ZIP Launchpad at SDSU.
+            </div>
+          </div>
+
+          <div class="flex flex-50-gt-sm waypoint bars-wrap" data-animation="slide-in-right">
+            <div class="bar flex">
+              <div class="bar fill" style="width:90%">
+                <div class="tag bold flex">Python</div>
+              </div>
+              <span>90%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:90%">
+                <div class="tag bold flex">Java</div>
+              </div>
+              <span>90%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:90%">
+                <div class="tag bold flex">Javascript</div>
+              </div>
+              <span>90%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:80%">
+                <div class="tag bold flex">C++</div>
+              </div>
+              <span>80%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:80%">
+                <div class="tag bold flex">HTML</div>
+              </div>
+              <span>80%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:70%">
+                <div class="tag bold flex">CSS</div>
+              </div>
+              <span>70%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:65%">
+                <div class="tag bold flex">Quasar</div>
+              </div>
+              <span>65%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:60%">
+                <div class="tag bold flex">Angular</div>
+              </div>
+              <span>60%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:60%">
+                <div class="tag bold flex">React</div>
+              </div>
+              <span>50%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:40%">
+                <div class="tag bold flex">Unity</div>
+              </div>
+              <span>40%</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="flex" id="portfolio">
+      <div class="header waypoint" data-animation="slide-in-right">
+        PROJECTS
+      </div>
+      <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".3s"></div>
+
+      <div class="filter-wrap waypoint" data-animation="fade-in">
+        <div class="flex row">
+          <div class="filter" data-filter="all">ALL</div>
+          <div class="filter" data-filter=".python">PYTHON</div>
+          <div class="filter" data-filter=".java">JAVA</div>
+          <div class="filter" data-filter=".web">WEB DEVELOPMENT</div>
+          <div class="filter" data-filter=".unity">UNITY</div>
+        </div>
+        <div class="float-bar">
+          <div class="flex row">
+            <div class="filter" data-filter="all">ALL</div>
+            <div class="filter" data-filter=".python">PYTHON</div>
+            <div class="filter" data-filter=".java">JAVA</div>
+            <div class="filter" data-filter=".web">WEB DEVELOPMENT</div>
+            <div class="filter" data-filter=".unity">UNITY</div>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="gallery" class="container flex row wrap waypoint">
+        <div class="mix web python" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">HighlightWire</div>
+              <span class="highlight">Quasar / Python</span>
+            </div>
+            <div class="button" id="highlight">LEARN MORE</div>
+          </div>
+        </div>
+
+        <div class="mix web python" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Music Mailbox</div>
+              <span class="highlight">Python</span>
+            </div>
+            <div class="button" id="music">LEARN MORE</div>
+          </div>
+        </div>
+
+        <div class="mix python web" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Friendly Checkers AI</div>
+              <span class="highlight">Python / Quasar</span>
+            </div>
+            <div class="button" id="checkers">LEARN MORE</div>
+          </div>
+        </div>
+
+        <div class="mix web" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Breakdownify</div>
+              <span class="highlight">Python</span>
+            </div>
+            <div class="button" id="breakdown">LEARN MORE</div>
+          </div>
+        </div>
+
+        <div class="mix unity" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Jousting Jamboree</div>
+              <span class="highlight">Unity / C#</span>
+            </div>
+            <div class="button" id="joust">LEARN MORE</div>
+          </div>
+        </div>
+
+        <div class="mix python" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Sliding Tile Puzzle AI</div>
+              <span class="highlight">Python</span>
+            </div>
+            <div class="button" id="sliding">LEARN MORE</div>
+          </div>
+        </div>
+
+        <div class="mix web" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Mailbox Toluca Lake Shopify Site</div>
+              <span class="highlight">Shopify</span>
+            </div>
+            <div class="button" id="mailbox">LEARN MORE</div>
+          </div>
+        </div>
+
+        <div class="mix unity" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Robo Restaurant</div>
+              <span class="highlight">Unity</span>
+            </div>
+            <div class="button" id="robo">LEARN MORE</div>
+          </div>
+        </div>
+
+        <div class="mix python" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Pacman Reflex Agent</div>
+              <span class="highlight">Python</span>
+            </div>
+            <div class="button" id="pacman">LEARN MORE</div>
+          </div>
+        </div>
+
+        <div class="mix web" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Healthcare Application</div>
+              <span class="highlight">Angular / React</span>
+            </div>
+            <div class="button" id="themall">LEARN MORE</div>
+          </div>
+        </div>
+
+        <div class="mix python" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Spotitube</div>
+              <span class="highlight">Python</span>
+            </div>
+            <div class="button" id="themall">LEARN MORE</div>
+          </div>
+        </div>
+
+        <div class="mix python java" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">License Plate Scanner</div>
+              <span class="highlight">Python / Java</span>
+            </div>
+            <div class="button" id="themall">LEARN MORE</div>
+          </div>
+        </div>
+
+        <div class="mix web" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Kramer Chat</div>
+              <span class="highlight">Quasar</span>
+            </div>
+            <div class="button" id="themall">LEARN MORE</div>
+          </div>
+        </div>
+
+        <div class="mix java" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Image Resizer</div>
+              <span class="highlight">Java</span>
+            </div>
+            <div class="button" id="themall">LEARN MORE</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog">
+      <div class="container flex">
+        <div class="header waypoint" data-animation="slide-in-left">MY JOURNEY</div>
+        <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s"></div>
+        <div class="flex row wrap">
+          <div style="font-size:20px; transform:translateY(-20px)"><b><u>PROFESSIONAL
+                EXPERIENCE</u></b></div>
+        </div>
+
+        <div class="flex row wrap">
+          <div class="flex row-gt-sm">
+            <a href="https://objectsecurity.com/" target="_blank">
+              <div class="blog-wrap waypoint" data-animation="fade-in">
+                <div class="fade-wrap">
+                  <div class="thumb" id="thumb-1"></div>
+                  <div class="label bold">ObjectSecurity</div>
+                  <div class="date">Software Engineering Intern</div>
+                  <div class="date">May 2019 - Current</div>
+                  <div class="bar"></div>
+                  <div class="text" style="text-align:left">
+                    <ul>
+                      <li>Worked on a machine learning project using Python, TensorFlow and Keras to analyze circuit
+                        boards</li>
+                      <li>Created a test suite using Java, HTML, CSS, JS, JUnit and REST APIs (front-end and back-end)
+                      </li>
+                      <li>Used Google APIs such as Vision, Custom Search and Storage</li>
+                      <li>Worked on computer vision project using edge detection, analyzing pixel RGB values, JFrame and
+                        JPanel</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://hillelsd.org/sdsu/" target="_blank">
+              <div class="blog-wrap waypoint" data-animation="fade-in">
+                <div class="fade-wrap">
+                  <div class="thumb" id="thumb-2"></div>
+                  <div class="label bold">Hillel of San Diego</div>
+                  <div class="date">Student Ambassador</div>
+                  <div class="date">Jan 2017 - Jan 2020</div>
+                  <div class="bar"></div>
+                  <div class="text">
+                    <ul>
+                      <li> Provided excellent customer service to a diverse clientele in-person and via phone
+                      </li>
+                      <li>Managed conference and meeting room bookings internally
+                      </li>
+                      <li>Planned, organize, and execute large and small scale events throughout the year</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://www.kpbs.org/" target="_blank">
+              <div class="blog-wrap waypoint" data-animation="fade-in">
+                <div class="fade-wrap">
+                  <div class="thumb" id="thumb-4"></div>
+                  <div class="label bold">KPBS Public Media</div>
+                  <div class="date">Local Events Curator</div>
+                  <div class="date">May 2019 - Oct 2019</div>
+                  <div class="bar"></div>
+                  <div class="text">
+                    <ul>
+                      <li> Posted local events from the San Diego area to the website
+                      </li>
+                      <li>Created the Image Resizer for KPBS for shrinking several photos to the appropriate size at
+                        once
+                      </li>
+                      <li>Created a Google Chrome extension for common HTML tags that KPBS uses on their website</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://cs.sdsu.edu/" target="_blank">
+              <div class="blog-wrap waypoint" data-animation="fade-in">
+                <div class="fade-wrap">
+                  <div class="thumb" id="thumb-3"></div>
+                  <div class="label bold">SDSU</div>
+                  <div class="date">Teaching Assistant - Computer Science 320</div>
+                  <div class="date">Sep 2018 - Dec 2018</div>
+                  <div class="bar"></div>
+                  <div class="text">
+                    <ul>
+                      <li> Assisted in design of course material, construct tests, grade assignments, and teach during
+                        after-hour sessions for 150+ students
+                      </li>
+                      <li>Worked with students one-on-one during lab meetings and office hours
+                      </li>
+                      <li>Reinforced lessons presented by professor through review material and study workshops</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+        <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+      </svg>
+      <div class="container flex">
+        <div class="header waypoint" data-animation="slide-in-left">
+          CONTACT
+        </div>
+        <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".25s"></div>
+        <div class="highlight waypoint" data-animation="slide-in-right" data-delay=".5s">
+          Have a question or want to work together?
+        </div>
+        <form class="waypoint" data-animation="pop-in" data-delay=".5s" id="contact-form">
+          <input placeholder="Name" type="text" name="name" required />
+          <input placeholder="Enter email" type="email" name="email" required />
+          <textarea placeholder="Your Message" type="text" name="message"></textarea>
+          <div id="success">
+            <div>
+              Your message was sent successfully. Thanks!<span id="close" class="mdi mdi-close"></span>
+            </div>
+          </div>
+          <input class="button" type="submit" id="submit" value="SUBMIT" />
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <i class="mdi mdi-chevron-double-up page-link" dest="home"></i>
+
+      <div class="icon-wrap flex row">
+        <a href="https://www.linkedin.com/in/jasonkramerr/">
+          <div class="flex icon" id="icon-2">
+            <i class="mdi mdi-linkedin"></i>
+          </div>
+        </a>
+        <a href="https://github.com/JasonKramer525">
+          <div class="flex icon" id="icon-3">
+            <i class="mdi mdi-github-circle"></i>
+          </div>
+        </a>
+      </div>
+      <div class="info-box">
+
+      </div>
+    </footer>
+  </div>
+
+  <div id="preload">
+    <img src="img/me.png" />
+    <img src="img/filler.jpg" />
+    <img src="img/thumb-1.jpg" />
+    <img src="img/thumb-2.jpg" />
+    <img src="img/thumb-3.jpg" />
+    <img src="img/thumb-4.jpg" />
+    <img src="img/thumb-5.jpg" />
+    <img src="img/thumb-6.jpg" />
+    <img src="img/blog-1.jpg" />
+    <img src="img/blog-2.jpg" />
+    <img src="img/blog-3.jpg" />
+    <img src="img/blog-4.jpg" />
+    <img src="img/slides/highlight-0.jpg" />
+    <img src="img/slides/highlight-1.jpg" />
+    <img src="img/slides/highlight-2.jpg" />
+    <img src="img/slides/music-0.jpg" />
+    <img src="img/slides/music-1.jpg" />
+    <img src="img/slides/music-2.jpg" />
+    <img src="img/slides/breakdown-0.jpg" />
+    <img src="img/slides/breakdown-1.jpg" />
+    <img src="img/slides/breakdown-2.jpg" />
+    <img src="img/slides/mystand-0.jpg" />
+    <img src="img/slides/mystand-1.jpg" />
+    <img src="img/slides/mystand-2.jpg" />
+    <img src="img/slides/never-0.jpg" />
+    <img src="img/slides/never-1.jpg" />
+    <img src="img/slides/never-2.jpg" />
+    <img src="img/slides/powur-0.jpg" />
+    <img src="img/slides/powur-1.jpg" />
+    <img src="img/slides/powur-2.jpg" />
+    <img src="img/slides/roambi-0.jpg" />
+    <img src="img/slides/roambi-1.jpg" />
+    <img src="img/slides/roambi-2.jpg" />
+    <img src="img/slides/themall-0.jpg" />
+    <img src="img/slides/themall-1.jpg" />
+    <img src="img/slides/themall-2.jpg" />
+    <img src="img/slides/walker-0.jpg" />
+    <img src="img/slides/walker-1.jpg" />
+    <img src="img/slides/walker-2.jpg" />
+  </div>
+</body>
+
+</html>
+
+<script src="scripts/canvas.js"></script>
